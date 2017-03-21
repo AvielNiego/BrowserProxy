@@ -18,3 +18,8 @@ def yesplanet_api():
     source = driver.page_source
     driver.close()
     return source
+
+
+@app.route("/")
+def yesplanet_api():
+    return "Hi"

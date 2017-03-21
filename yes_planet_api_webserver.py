@@ -10,6 +10,11 @@ display = Display(visible=0, size=(800, 600))
 display.start()
 
 
+@app.route("/")
+def yesplanet_api():
+    return "Hi"
+
+
 @app.route("/yesplanet/api")
 def yesplanet_api():
     driver = webdriver.Firefox()
@@ -18,8 +23,3 @@ def yesplanet_api():
     source = driver.page_source
     driver.close()
     return source
-
-
-@app.route("/")
-def yesplanet_api():
-    return "Hi"

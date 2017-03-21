@@ -14,12 +14,12 @@ display.start()
 def yesplanet_api():
     return "Hi"
 
-
-@app.route("/yesplanet/api")
-def yesplanet_api():
-    driver = webdriver.Firefox()
-    driver.get(request.args.get('url'))
-    time.sleep(5)
-    source = driver.page_source
-    driver.close()
-    return source
+#
+# @app.route("/yesplanet/api")
+# def yesplanet_api():
+#     driver = webdriver.Firefox()
+#     driver.get(request.args.get('url'))
+#     time.sleep(5)
+#     source = driver.page_source
+#     driver.close()
+#     return source

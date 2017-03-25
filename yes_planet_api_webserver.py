@@ -21,6 +21,6 @@ def yesplanet_api():
     driver = webdriver.Firefox()
     driver.get(request.args.get('url'))
     time.sleep(5)
-    source = driver.page_source.decode('utf-8')
+    source = driver.page_source.encode('WINDOWS_1252')
     driver.close()
     return source

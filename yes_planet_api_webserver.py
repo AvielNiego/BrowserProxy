@@ -23,4 +23,5 @@ def yesplanet_api():
     time.sleep(5)
     source = driver.page_source
     driver.close()
+    print source
     return source

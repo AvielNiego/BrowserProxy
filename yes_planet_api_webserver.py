@@ -1,3 +1,4 @@
+# coding=utf-8
 import time
 
 from flask import Flask
@@ -9,10 +10,10 @@ app = Flask(__name__)
 display = Display(visible=0, size=(800, 600))
 display.start()
 
-#
-# @app.route("/")
-# def yesplanet_api():
-#     return "Hi"
+
+@app.route("/")
+def hello():
+    return "שלום"
 
 
 @app.route("/yesplanet/api")

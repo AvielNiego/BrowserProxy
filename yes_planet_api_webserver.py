@@ -24,3 +24,7 @@ def yesplanet_api():
     source = driver.page_source
     driver.close()
     return source.decode('utf-8')
+
+
+if __name__ == "__main__":
+    app.run()

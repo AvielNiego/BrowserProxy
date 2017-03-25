@@ -23,7 +23,7 @@ def yesplanet_api():
     time.sleep(5)
     source = driver.page_source
     driver.close()
-    return source.decode('utf-8')
+    return source
 
 
 if __name__ == "__main__":

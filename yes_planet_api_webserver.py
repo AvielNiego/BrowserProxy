@@ -21,7 +21,7 @@ def yesplanet_api():
     driver = webdriver.Firefox()
     driver.get(request.args.get('url'))
     time.sleep(5)
-    source = driver.page_source
+    source = driver.find_element_by_tag_name('html').text
     driver.close()
     return source
 

@@ -1,0 +1,350 @@
+1490050205067	geckodriver	INFO	Listening on 127.0.0.1:54439
+1490050207227	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qEA2yd60pZEy
+1490050207228	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490050207240	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43933
+1490050212525	Marionette	INFO	Listening on port 43933
+1490050215596	Marionette	WARN	TLS certificate errors will be ignored for this session
+1490050378134	geckodriver	INFO	Listening on 127.0.0.1:59791
+1490050380372	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.YZ2AxBeUfb0x
+1490050380470	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490050380677	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39513
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x46001C,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x46001C,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0085,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1490073432421	geckodriver	INFO	Listening on 127.0.0.1:43029
+1490073432656	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ykQxybfAWifV
+1490073432658	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490073432698	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34743
+1490073577324	addons.manager	ERROR	Exception loading default provider "resource://gre/modules/addons/XPIProvider.jsm": [Exception... "Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]"  nsresult: "0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: <TOP_LEVEL> :: line 1805"  data: no] Stack trace: resource://gre/modules/addons/XPIProvider.jsm:1805 < AddonManagerInternal.startup()@resource://gre/modules/AddonManager.jsm:929 < this.AddonManagerPrivate.startup()@resource://gre/modules/AddonManager.jsm:3033 < amManager.prototype.observe()@resource://gre/components/addonManager.js:65
+1490074503724	geckodriver	INFO	Listening on 127.0.0.1:34559
+1490074504729	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.yJMhcDoYoZ0p
+1490074504736	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490074504764	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45155
+1490074516484	Marionette	INFO	Listening on port 45155
+1490074519234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1490074798055	geckodriver	INFO	Listening on 127.0.0.1:39561
+1490074799451	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.b0eTXYM3gMIu
+1490074799455	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490074799473	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45071
+1490074808909	Marionette	INFO	Listening on port 45071
+1490074813285	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:2095): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+[Child 1926] WARNING: pipe error (14): Connection reset by peer: file /build/firefox-oV8O_r/firefox-52.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 1926] ###!!! ABORT: Aborting on channel error.: file /build/firefox-oV8O_r/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 1926] ###!!! ABORT: Aborting on channel error.: file /build/firefox-oV8O_r/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x900001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+(/usr/lib/firefox/plugin-container:1926): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+1490075027817	geckodriver	INFO	Listening on 127.0.0.1:33147
+1490075028939	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.EpnIe6Pd3ko5
+1490075028940	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490075028953	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35523
+1490075033251	Marionette	INFO	Listening on port 35523
+1490075036035	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1490461557765	geckodriver	INFO	Listening on 127.0.0.1:40387
+1490461558745	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.GI4w4Cn2K01b
+1490461558746	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490461558763	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42967
+1490461574498	Marionette	INFO	Listening on port 42967
+1490461577981	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:53843): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490461770312	geckodriver	INFO	Listening on 127.0.0.1:47341
+1490461771498	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.xa6XDr5NiRfV
+1490461771499	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490461771516	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44239
+1490461776053	Marionette	INFO	Listening on port 44239
+1490461778434	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:54027): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490473775224	geckodriver	INFO	Listening on 127.0.0.1:42791
+1490473776309	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.taAnJEYQDKBP
+1490473776316	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490473776329	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37017
+1490473780359	Marionette	INFO	Listening on port 37017
+1490473782650	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:59076): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490473868232	geckodriver	INFO	Listening on 127.0.0.1:35045
+1490473869391	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ygXJ156h2pZm
+1490473869392	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490473869412	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43051
+1490473873174	Marionette	INFO	Listening on port 43051
+1490473875343	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:59224): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490474056243	geckodriver	INFO	Listening on 127.0.0.1:59053
+1490474057425	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.T1kqZx73ZXcX
+1490474057432	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490474057462	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40309
+1490474061615	Marionette	INFO	Listening on port 40309
+1490474063874	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:59411): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490474178975	geckodriver	INFO	Listening on 127.0.0.1:38387
+1490474180135	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.KFcZa4MKjnEF
+1490474180140	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490474180183	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40819
+1490474184016	Marionette	INFO	Listening on port 40819
+1490474186448	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:59583): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490474281447	geckodriver	INFO	Listening on 127.0.0.1:59101
+1490474282632	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.xi9OOY5SwZkn
+1490474282638	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490474282645	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40485
+1490474286704	Marionette	INFO	Listening on port 40485
+1490474288952	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+
+(/usr/lib/firefox/plugin-container:59749): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490475334269	geckodriver	INFO	Listening on 127.0.0.1:57471
+1490475335475	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.1dDDOqVecMNA
+1490475335476	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490475335503	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39529
+1490475339350	Marionette	INFO	Listening on port 39529
+1490475341542	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:60307): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490475610257	geckodriver	INFO	Listening on 127.0.0.1:38761
+1490475611322	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.y1IDWKvzrHMk
+1490475611324	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490475611341	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33769
+1490475615428	Marionette	INFO	Listening on port 33769
+1490475618058	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:60532): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490476423893	geckodriver	INFO	Listening on 127.0.0.1:46257
+1490476425067	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.jOlWLeWQK3um
+1490476425068	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490476425090	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38619
+1490476429550	Marionette	INFO	Listening on port 38619
+1490476431749	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/plugin-container:61333): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1490476512091	geckodriver	INFO	Listening on 127.0.0.1:39953
+1490476513253	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.WYdZXhbY3wdz
+1490476513255	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490476513271	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37691
+1490476517215	Marionette	INFO	Listening on port 37691
+1490476519618	Marionette	WARN	TLS certificate errors will be ignored for this session
+1490476719780	geckodriver	INFO	Listening on 127.0.0.1:37973
+1490476720945	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.dwNO9ONBUgxh
+1490476720952	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490476720961	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33327
+1490476725257	Marionette	INFO	Listening on port 33327
+1490476727517	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[Child 61668] ###!!! ABORT: Aborting on channel error.: file /build/firefox-Y5qa6J/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 61668] ###!!! ABORT: Aborting on channel error.: file /build/firefox-Y5qa6J/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+
+(/usr/lib/firefox/plugin-container:61489): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+
+(/usr/lib/firefox/plugin-container:61668): Gdk-WARNING **: /usr/lib/firefox/plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+

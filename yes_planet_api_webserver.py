@@ -17,7 +17,7 @@ def create_new_driver():
     return webdriver.Chrome(chrome_options=chrome_options)
 
 @app.route("/")
-def yesplanet_api_presentations():
+def yesplanet_api_home():
     driver = create_new_driver()
     driver.get("http://www.yesplanet.co.il/")
     WebDriverWait(driver, 10, 0.001).until(lambda d: d.find_elements_by_id("fancy_overlay"))

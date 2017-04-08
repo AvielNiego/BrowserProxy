@@ -17,7 +17,7 @@ def create_new_driver():
     return webdriver.Chrome(chrome_options=chrome_options)
 
 
-@app.route("/yesplanet/api/presentations")
+@app.route("/presentationsJSON")
 def yesplanet_api_presentations():
     driver = create_new_driver()
     waiter = WebDriverWait(driver, 10, 0.001)

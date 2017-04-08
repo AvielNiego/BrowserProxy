@@ -1,4 +1,5 @@
 # coding=utf-8
+import json
 import time
 
 from flask import Flask
@@ -32,6 +33,20 @@ def yesplanet_api():
     source = driver.page_source
     driver.close()
     return source
+
+
+@app.route("/yesplanet/api/presentations")
+def yesplanet_api():
+    driver = create_new_driver()
+    waiter = WebDriverWait(driver, 10, 0.001)
+    driver.get("http://www.yesplanet.co.il/")
+    waiter.until(lambda d: d.find_elements_by_id("fancy_overlay"))
+    driver.execute_script(
+        "$.ajax({'url' : 'movies/presentationsJSON','type' : 'GET','success' : function(data) {a = data}});")
+    waiter.until(lambda d: d.execute_script("return typeof a !== 'undefined'"))
+    presentations_json = json.dumps(driver.execute_script("return a"))
+    driver.close()
+    return presentations_json
 
 
 if __name__ == "__main__":

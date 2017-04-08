@@ -14,9 +14,16 @@ def hello():
     return "שלום"
 
 
+def create_new_driver():
+    chrome_options = webdriver.ChromeOptions()
+    prefs = {"profile.managed_default_content_settings.images": 2}
+    chrome_options.add_experimental_option("prefs", prefs)
+    return webdriver.Chrome(chrome_options=chrome_options)
+
+
 @app.route("/yesplanet/api")
 def yesplanet_api():
-    driver = webdriver.Chrome()
+    driver = create_new_driver()
     driver.get(request.args.get('url'))
     time.sleep(5)
     source = driver.page_source

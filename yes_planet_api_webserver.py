@@ -21,7 +21,7 @@ def create_new_driver():
 
 @app.route("/yesplanet/api/presentations")
 def yesplanet_api_presentations():
-    if datetime.datetime.now() - datetime.timedelta(hours=1) <= last_updated:
+    if datetime.datetime.now() - datetime.timedelta(hours=1) > last_updated:
         update_presentations_json()
     return presentations_json
 

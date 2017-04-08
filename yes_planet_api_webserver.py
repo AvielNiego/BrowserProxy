@@ -7,8 +7,6 @@ from pyvirtualdisplay import Display
 from selenium import webdriver
 
 app = Flask(__name__)
-display = Display(visible=0, size=(800, 600))
-display.start()
 
 
 @app.route("/")
@@ -18,7 +16,7 @@ def hello():
 
 @app.route("/yesplanet/api")
 def yesplanet_api():
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     driver.get(request.args.get('url'))
     time.sleep(5)
     source = driver.find_element_by_tag_name('html').text
@@ -27,4 +25,6 @@ def yesplanet_api():
 
 
 if __name__ == "__main__":
+    display = Display(visible=0, size=(800, 600))
+    display.start()
     app.run('0.0.0.0')

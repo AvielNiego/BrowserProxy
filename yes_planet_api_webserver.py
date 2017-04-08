@@ -18,8 +18,7 @@ def hello():
 def yesplanet_api():
     driver = webdriver.Chrome()
     driver.get(request.args.get('url'))
-    time.sleep(5)
-    source = driver.find_element_by_tag_name('html').text
+    source = driver.page_source
     driver.close()
     return source
 

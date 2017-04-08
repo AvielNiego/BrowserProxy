@@ -6,6 +6,8 @@ from flask import request
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
+from selenium.webdriver.support.wait import WebDriverWait
+
 app = Flask(__name__)
 
 
@@ -24,8 +26,9 @@ def create_new_driver():
 @app.route("/yesplanet/api")
 def yesplanet_api():
     driver = create_new_driver()
+    waiter = WebDriverWait(driver, 10, 0.001)
     driver.get(request.args.get('url'))
-    time.sleep(5)
+    waiter.until(lambda d: d.find_elements_by_id("fancy_overlay"))
     source = driver.page_source
     driver.close()
     return source

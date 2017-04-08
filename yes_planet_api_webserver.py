@@ -36,7 +36,7 @@ def yesplanet_api():
 
 
 @app.route("/yesplanet/api/presentations")
-def yesplanet_api():
+def yesplanet_api_presentations():
     driver = create_new_driver()
     waiter = WebDriverWait(driver, 10, 0.001)
     driver.get("http://www.yesplanet.co.il/")

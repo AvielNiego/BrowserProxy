@@ -27,7 +27,7 @@ def create_new_driver():
 
 @app.route("/")
 def yesplanet_api_home():
-    return driver.page_source
+    return get_yesplanet_path("/")
 
 
 @app.route("/presentationsJSON")

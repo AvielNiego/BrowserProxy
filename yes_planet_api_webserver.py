@@ -60,4 +60,5 @@ def validate_driver():
 if __name__ == "__main__":
     display = Display(visible=0, size=(800, 600))
     display.start()
+    create_new_driver()
     app.run('0.0.0.0')

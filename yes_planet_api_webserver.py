@@ -28,6 +28,7 @@ def create_new_driver():
 
 @app.route("/")
 def yesplanet_api_home():
+    validate_driver()
     return driver.page_source
 
 

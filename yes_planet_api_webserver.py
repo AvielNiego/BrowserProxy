@@ -12,10 +12,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 app = Flask(__name__)
 driver = None
 waiter = None
-
+last_driver_update = datetime.datetime.now
 
 def create_new_driver():
-    global driver, waiter
+    global driver, waiter, last_driver_update
     chrome_options = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     chrome_options.add_experimental_option("prefs", prefs)
@@ -23,11 +23,12 @@ def create_new_driver():
     waiter = WebDriverWait(driver, 10, 0.1)
     driver.get("http://www.yesplanet.co.il/")
     waiter.until(lambda d: d.find_elements_by_id("fancy_overlay"))
+    last_driver_update = datetime.datetime.now()
 
 
 @app.route("/")
 def yesplanet_api_home():
-    return get_yesplanet_path("/")
+    return driver.page_source
 
 
 @app.route("/presentationsJSON")
@@ -47,7 +48,10 @@ def get_yesplanet_path(path):
 
 def validate_driver():
     try:
+        global last_driver_update
         driver.execute_script('1 == 1')
+        if datetime.datetime.now() - last_driver_update > datetime.timedelta(hours=3):
+            create_new_driver()
     except:
         create_new_driver()
 

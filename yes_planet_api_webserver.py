@@ -1,6 +1,8 @@
 # coding=utf-8
 import datetime
 import json
+import random
+import string
 
 from flask import Flask
 from pyvirtualdisplay import Display
@@ -35,11 +37,12 @@ def yesplanet_api_presentations():
 
 def get_yesplanet_path(path):
     validate_driver()
-    driver.execute_script('a = null')
+    var_name = ''.join(random.choice(string.ascii_letters) for _ in range(15))
+    driver.execute_script('%s = null' % var_name)
     driver.execute_script(
-        "$.ajax({'url' : '%s','type' : 'GET','success' : function(data) {a = data}});" % path)
-    waiter.until(lambda d: d.execute_script("return a != null"))
-    return json.dumps(driver.execute_script("return a"))
+        ("$.ajax({'url' : '%s','type' : 'GET','success' : function(data) {" + var_name + " = data}});") % path)
+    waiter.until(lambda d: d.execute_script("return %s != null" % var_name))
+    return json.dumps(driver.execute_script("return %s" % var_name))
 
 
 def validate_driver():

@@ -44,8 +44,9 @@ def get_yesplanet_path(path):
         ("$.ajax({'url' : '%s','type' : 'GET','success' : function(data) {" + var_name + " = data}});") % path)
     waiter = WebDriverWait(driver, 10, 0.1)
     waiter.until(lambda d: d.execute_script("return %s != null" % var_name))
+    result = driver.execute_script("return %s" % var_name)
     driver.close()
-    return json.dumps(driver.execute_script("return %s" % var_name))
+    return json.dumps(result)
 
 
 if __name__ == "__main__":
